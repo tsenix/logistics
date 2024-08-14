@@ -355,9 +355,12 @@ html {
   border-radius: 50px;
   transition: all .5s ease
 }
-.footer__social-item img {
+.footer__social-item svg {
   width: 24px;
-  height: 24px
+  height: 24px;
+  fill: #fff;
+  stroke: #fff;
+  transition: all .5s ease
 }
 .footer__copyright {
   font-size: 18px;
@@ -717,8 +720,7 @@ html {
   }
   .about__info {
     flex-direction: row;
-    justify-content: space-between;
-    gap: 18px
+    gap: 40px
   }
   .services__item {
     flex: 0 0 calc(50% - 16px)
@@ -766,14 +768,23 @@ html {
     text-transform: uppercase;
     color: #fff;
     background-color: #202326;
+    border-radius: 50%;
     transition: all .5s ease
   }
   .header__links:hover {
-    background-color: #fc0
+    background-color: #fc0;
+    color: #202326
   }
-  .header__links img {
+  .header__links:hover svg {
+    fill: #202326;
+    stroke: #202326
+  }
+  .header__links svg {
     width: 26px;
-    height: 26px
+    height: 26px;
+    fill: #fff;
+    stroke: #fff;
+    transition: all .5s ease
   }
   .header__button:hover {
     background-color: #ffd46e
@@ -797,6 +808,10 @@ html {
     background-color: #fc0;
     border-color: #fc0
   }
+  .footer__social-item:hover svg {
+    fill: #202326;
+    stroke: #202326
+  }
   .services__body {
     gap: 30px
   }
@@ -805,7 +820,7 @@ html {
   }
   .services__tags-item:hover {
     color: #333;
-    background-color: rgba(255,255,255,.7)
+    background-color: #fff
   }
   .contacts__container {
     flex-direction: row
@@ -838,7 +853,7 @@ html {
     width: 54px;
     height: 54px
   }
-  .header__links img {
+  .header__links svg {
     width: 28px;
     height: 28px
   }
@@ -872,7 +887,7 @@ html {
     margin-bottom: 48px;
     padding: 48px 0
   }
-  .footer__social-item img {
+  .footer__social-item svg {
     width: 28px;
     height: 28px
   }
@@ -943,8 +958,8 @@ html {
     gap: 40px
   }
   .about__content p {
-    font-size: 24px;
-    line-height: 38px
+    font-size: 22px;
+    line-height: 36px
   }
   .services {
     padding: 120px 0
@@ -1016,6 +1031,11 @@ html {
   }
   .contacts__form {
     flex: 0 0 500px
+  }
+}
+@media (min-width:92.49875em) {
+  .container {
+    padding: 0 12%
   }
 }
 @media (min-width:119.99875em) {
