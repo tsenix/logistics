@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240814223407">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240816100047">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +22,7 @@
 					<a href="#about" class="header__menu-item">Про нас</a>
 					<a href="#services" class="header__menu-item">Послуги</a>
 					<a href="#advantages" class="header__menu-item">Переваги</a>
-					<a href="#contacts" class="header__menu-item">Контакти</a>
+					<a href="#footer" class="header__menu-item">Контакти</a>
 				</nav>
 
 				<div class="header__row">
@@ -71,7 +71,7 @@
 				<a href="#about" class="mobile__menu-item">Про нас</a>
 				<a href="#services" class="mobile__menu-item">Послуги</a>
 				<a href="#advantages" class="mobile__menu-item">Переваги</a>
-				<a href="#contacts" class="mobile__menu-item">Контакти</a>
+				<a href="#footer" class="mobile__menu-item">Контакти</a>
 			</nav>
 
 			<div class="mobile__block-links">
@@ -84,7 +84,8 @@
 		</div>
 		<main class="page">
 			<section class="main">
-				<video class="main__video" width="640" height="360" autoplay loop muted>
+				<video class="main__video" width="640" height="360" poster="img/poster.webp" autoplay loop muted playsinline>
+					<source src="img/lean-logistics.webm" type="video/webm">
 					<source src="img/lean-logistics.mp4" type="video/mp4">
 					Ваш браузер не поддерживает воспроизведение видео.
 				</video>
@@ -96,15 +97,15 @@
 				</div>
 			</section>
 
-			<div class="slider">
-				<div class="slider__track">
-					<img src="img/brands/brand01.svg" alt="" class="slider__image">
-					<img src="img/brands/brand02.svg" alt="" class="slider__image">
-					<img src="img/brands/brand04.svg" alt="" class="slider__image">
-					<img src="img/brands/brand05.svg" alt="" class="slider__image">
-					<img src="img/brands/brand06.svg" alt="" class="slider__image">
-					<img src="img/brands/brand07.svg" alt="" class="slider__image">
-					<img src="img/brands/brand08.svg" alt="" class="slider__image">
+			<div class="slider swiper">
+				<div class="slider__track swiper-wrapper">
+					<img src="img/brands/brand01.svg" alt="" class="slider__image swiper-slide">
+					<img src="img/brands/brand02.svg" alt="" class="slider__image swiper-slide">
+					<img src="img/brands/brand04.svg" alt="" class="slider__image swiper-slide">
+					<img src="img/brands/brand05.svg" alt="" class="slider__image swiper-slide">
+					<img src="img/brands/brand06.svg" alt="" class="slider__image swiper-slide">
+					<img src="img/brands/brand07.svg" alt="" class="slider__image swiper-slide">
+					<img src="img/brands/brand08.svg" alt="" class="slider__image swiper-slide">
 				</div>
 			</div>
 
@@ -308,7 +309,7 @@
 				</div>
 			</section>
 		</main>
-		<footer class="footer">
+		<footer id="footer" class="footer">
 			<div class="footer__container">
 				<div class="footer__title">Lean Logistics VLV</div>
 
@@ -351,7 +352,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20240814223407"></script>
+	<script src="js/app.min.js?_v=20240816100047"></script>
 </body>
 
 </html>

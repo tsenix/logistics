@@ -77,7 +77,7 @@
         const trackWidth = sliderTrack.scrollWidth;
         sliderTrack.style.width = `${trackWidth}px`;
         let offset = 0;
-        const speed = .5;
+        const speed = 1;
         function autoScroll() {
             offset -= speed;
             if (Math.abs(offset) >= trackWidth / 2) offset = 0;
