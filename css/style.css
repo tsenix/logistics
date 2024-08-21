@@ -702,6 +702,7 @@ html {
 .contacts__button {
   margin-top: 8px;
   padding: 20px 24px;
+  width: auto;
   font-size: 18px;
   line-height: 22px;
   font-weight: 300;
@@ -709,6 +710,7 @@ html {
   color: #18181a;
   border: 1px solid #bbb;
   border-radius: 50px;
+  cursor: pointer;
   transition: all .5s ease
 }
 @media (min-width:47.99875em) {
